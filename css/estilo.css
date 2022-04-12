@@ -18,14 +18,16 @@ body{
 	background: url(../imagens/detalhe-topo.png) no-repeat right top;
 	/*Como a imagem está como topo, ela nao sofrerá influência do padding*/
 	padding-top: 25px;
+
 }
 
 .logo{
 	width: 152px;
 	height: 66px;
 	background: url(../imagens/logo.png) no-repeat center;
-	/*Não é boa prática usar o display non*/
+	/*Não é boa prática usar o display none*/
 	text-indent: -3000px;
+	
 }
 
 
@@ -58,3 +60,36 @@ body{
 	color: #fff;
 	background: url(../imagens/divisor.png) no-repeat left center;
 }
+
+/* poderia usar seletor li também*/
+#topo ul .primeiro a{
+	background: none;
+}
+
+#topo ul a:hover{
+	color: #69001d;
+}
+
+
+/*Selecionando apenas a navegação*/
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.economia #navegacao a#economia,
+body.saude #navegacao a#saude,
+body.ciencia #navegacao a#ciencia,
+body.fotos #navegacao a#fotos
+{
+	color: #fff;
+	background: #de003e;
+	cursor: text;
+}
+
+
+/*
+*** Bloco de comentário ***
+
+
+
+
+*/
